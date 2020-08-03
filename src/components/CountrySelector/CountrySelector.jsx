@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from "react";
-import {
-  NativeSelect,
-  FormControl,
-  InputLabel,
-  FormHelperText,
-  Input
-} from "@material-ui/core";
+import { NativeSelect, FormControl, FormHelperText } from "@material-ui/core";
 import styles from "./CountrySelector.module.css";
 import { fetchCountries } from "../../api";
-import cx from "classnames";
 
 const CountrySelector = ({ handleSelectCountry }) => {
   const [fetchedCountries, setFetchedCountries] = useState([]);
