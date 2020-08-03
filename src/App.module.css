@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(250, 250, 250);
+  background-color: #000000;
+  margin: 0 0;
 }
 
 .container {
@@ -7,6 +8,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://assets.tvo.org/prod/s3fs-public/styles/full_width_1280/public/media-library/covid.jpg?cHZuG_q3tLxhVEfVlkLh5raMPd1fuoxK");
+  background-size: cover;
 }
 
 .image {

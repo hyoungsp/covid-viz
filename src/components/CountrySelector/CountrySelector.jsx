@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { NativeSelect, FormControl } from "@material-ui/core";
+import {
+  NativeSelect,
+  FormControl,
+  InputLabel,
+  FormHelperText,
+  Input
+} from "@material-ui/core";
 import styles from "./CountrySelector.module.css";
 import { fetchCountries } from "../../api";
+import cx from "classnames";
 
 const CountrySelector = ({ handleSelectCountry }) => {
   const [fetchedCountries, setFetchedCountries] = useState([]);
@@ -26,6 +33,7 @@ const CountrySelector = ({ handleSelectCountry }) => {
           </option>
         ))}
       </NativeSelect>
+      <FormHelperText>Select a country or global</FormHelperText>
     </FormControl>
   );
 };
