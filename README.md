@@ -11,4 +11,4 @@
 - [x] react-chart / countup / axios
 - [x] api source: https://covid19.mathdro.id/api
 
-## Netlify Address: https://optimistic-austin-b61c31.netlify.app/
+## Netlify Address: https://practical-panini-37b925.netlify.app/
