@@ -6,7 +6,6 @@ import cx from "classnames";
 import styles from "./Cards.module.css";
 
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
-  console.log(confirmed);
   if (!confirmed) {
     return "Loading....";
   }
@@ -26,15 +25,15 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               Infected
             </Typography>
             <Typography variant='h5'>
-              {new Date(lastUpdate).toDateString()}
-            </Typography>
-            <Typography color='textSecondary'>
               <CountUp
                 start={0}
                 end={confirmed.value}
                 duration={2.3}
                 separator=','
               />
+            </Typography>
+            <Typography color='textSecondary'>
+              {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant='body2'>
               Number of Active Cases of COVID-19
@@ -53,15 +52,15 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               Recovered
             </Typography>
             <Typography variant='h5'>
-              {new Date(lastUpdate).toDateString()}
-            </Typography>
-            <Typography color='textSecondary'>
               <CountUp
                 start={0}
                 end={recovered.value}
                 duration={2.3}
                 separator=','
               />
+            </Typography>
+            <Typography color='textSecondary'>
+              {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant='body2'>
               Number of Recovery from COVID-19
@@ -80,15 +79,15 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               Deaths
             </Typography>
             <Typography variant='h5'>
-              {new Date(lastUpdate).toDateString()}
-            </Typography>
-            <Typography color='textSecondary'>
               <CountUp
                 start={0}
                 end={deaths.value}
                 duration={2.3}
                 separator=','
               />
+            </Typography>
+            <Typography color='textSecondary'>
+              {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant='body2'>
               Number of Deaths caused by COVID-19
